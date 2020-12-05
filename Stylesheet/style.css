@@ -4,6 +4,26 @@ body {
   margin: 0;
 }
 
+header {
+  text-align: center;
+  background: white;
+  padding: ;
+}
+
+nav ul{
+list-style: none;
+display: flex;
+padding: 0;
+justify-content: space-between;
+}
+
+nav li {
+
+}
+
+nav a {
+
+}
 
 
 h1 {
