@@ -45,7 +45,7 @@ img {
   justify-content: space-between;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 200px) {
   .columns {
     flex-direction: column;
 
@@ -70,7 +70,7 @@ width: 70%;
   color: #fff;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 200px) {
 .col-1,
 .col-2,
 .col-3 {
