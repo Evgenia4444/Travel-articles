@@ -1,0 +1,319 @@
+body {
+  font-size: 1.125rem;
+  color: #707070;
+  margin: 0;
+  font-family: "Roboto", sans serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #f8f8f8;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
+footer p {
+font-size: .75rem;
+}
+
+ footer strong {
+   font-size: 1.125rem;
+ }
+/* Layout */
+
+.container {
+width: 90%;
+max-width: 900px;
+margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+/* Media query */
+@media (min-width: 675px) {
+      .container-flex {
+        flex-direction: row;
+      }
+
+      main {
+        width: 70%;
+      }
+
+      aside {
+        width: 25%;
+        min-width: 200px;
+      }
+}
+
+.logo {
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* the logo subtitle */
+
+h1, h2, h3 {
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+  color: #143774;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a{
+  color:#143774;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.subtitle {
+font-weight: 700;
+color: #64a6ed;
+font-size: .75rem;
+margin: 0;
+}
+
+.article-title-1 {
+  font-size: 1.75rem;
+ font-weight: bold;
+}
+
+.article-title {
+  font-size: 1.3rem;
+ font-weight: bold;
+}
+
+.article-info {
+  font-size:
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+}
+
+.article-body {
+  font-size: 1rem;
+  font-family: "Roboto", sans serif;
+  font-weight: regular;
+}
+
+.article-read-more, .article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+.article-info {
+  margin: 2em 0;
+}
+
+/* widget */
+
+
+.widget-title {
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.widget-body {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+}
+
+.widget-recent-post-title {
+  font-family: "Roboto", sans serif;
+  font-weight: bold;
+}
+
+
+
+/* Navigation */
+
+nav ul{
+list-style: none;
+display: flex;
+padding: 0;
+justify-content: center;
+}
+
+nav li {
+margin-left: 2em;
+}
+
+nav a {
+text-decoration: none;
+color: #707070;
+font-weight: bold;
+font-family: "Roboto", sans serif;
+margin: .25em 0;
+}
+
+nav a:hover, nav a:focus {
+  color: #64a6ed;
+}
+
+.current-page:hover {
+  border-bottom: 1.2px solid  #64a6ed;
+}
+
+
+h1 {
+  font-size: 3rem;
+  color: #212614;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+h1 span {
+  color: #64a6ed;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+}
+
+p {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+
+}
+
+.columns {
+  display: flex;
+  align-items: flex-start;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+
+@media (max-width: 200px) {
+  .columns {
+    flex-direction: column;
+
+          }
+}
+
+/* Articles */
+
+.article-featured {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+order: 2;
+}
+
+.article-recent-secondary {
+order: 1;
+}
+
+@media (min-width: 500px) {
+  .article-recent-main {
+    margin-top: -1em;
+  }
+
+  .article-info {
+
+  }
+}
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+width: 67%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
+  }
+  .article-info {
+    order: -1
+  }
+}
+
+
+/* Widgets */
+
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 2em;
+}
